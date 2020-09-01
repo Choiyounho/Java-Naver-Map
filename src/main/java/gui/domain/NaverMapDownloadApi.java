@@ -1,3 +1,5 @@
+package gui.domain;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URLEncoder;
@@ -17,7 +19,6 @@ public class NaverMapDownloadApi {
     private static final String IMAGE_TYPE = ".jpg";
     private static final String NAVER_MAP_DOWNLOAD_API_URL = "https://naveropenapi.apigw.ntruss.com/map-static/v2/raster?";
     private static final String INVALID_SERVER_RESPONSE_MESSAGE = "서버와의 응답이 올바르지 않습니다.";
-    
 
     public File downloadNaverMapImage(AddressVo addressVo) throws IOException {
         File file;

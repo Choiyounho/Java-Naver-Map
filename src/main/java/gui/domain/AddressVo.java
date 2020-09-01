@@ -1,3 +1,5 @@
+package gui.domain;
+
 public class AddressVo {
     private String roadAddress;
     private String jibunAddress;
@@ -49,7 +51,7 @@ public class AddressVo {
 
     @Override
     public String toString() {
-        return "AddressVo [roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", x=" + x + ", y=" + y
+        return "gui.domain.AddressVo [roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", x=" + x + ", y=" + y
                 + "]";
     }
 }
