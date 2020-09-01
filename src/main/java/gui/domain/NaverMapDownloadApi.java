@@ -8,6 +8,8 @@ import java.net.URLEncoder;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import static utils.CommonsConstant.HTTP_STATE_CODE_200_OK;
+import static utils.CommonsConstant.UTF_8;
 
 
 public class NaverMapDownloadApi {
@@ -21,6 +23,7 @@ public class NaverMapDownloadApi {
     private static final String IMAGE_TYPE = ".jpg";
     private static final String NAVER_MAP_DOWNLOAD_API_URL = "https://naveropenapi.apigw.ntruss.com/map-static/v2/raster?";
     private static final String INVALID_SERVER_RESPONSE_MESSAGE = "서버와의 응답이 올바르지 않습니다.";
+
 
     public File downloadNaverMapImage(AddressVo addressVo) throws IOException {
         File file;

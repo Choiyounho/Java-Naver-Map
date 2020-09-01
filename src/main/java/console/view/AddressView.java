@@ -1,5 +1,6 @@
 package console.view;
 
+import gui.domain.AddressVo;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

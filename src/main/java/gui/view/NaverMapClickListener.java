@@ -1,4 +1,4 @@
-package naver.map.gui.view;
+package gui.view;
 
 import console.domain.NaverMapApi;
 import console.view.AddressView;
@@ -19,7 +19,7 @@ public class NaverMapClickListener implements ActionListener {
 
     private gui.view.Gui naverMapJFrame;
 
-    public NaverMapClickListener(naver.map.gui.view.Gui naverMapJFrame) {
+    public NaverMapClickListener(gui.view.Gui naverMapJFrame) {
         this.naverMapJFrame = naverMapJFrame;
     }
 

@@ -16,6 +16,8 @@ import static utils.CommonsConstant.UTF_8;
 
 public class NaverMapApi {
 
+    public NaverMapApi(){}
+
     private static final String NAVER_MAP_API_URL = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=";
 
     public static JSONArray jsonParse(StringBuilder response) {

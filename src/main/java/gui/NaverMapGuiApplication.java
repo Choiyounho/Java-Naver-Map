@@ -1,6 +1,6 @@
 package gui;
 
-import naver.map.gui.view.Gui;
+import gui.view.Gui;
 
 public class NaverMapGuiApplication {
 

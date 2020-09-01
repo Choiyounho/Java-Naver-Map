@@ -6,16 +6,8 @@ public class AddressVo {
     private String x;
     private String y;
 
-    public AddressVo() {
-    }
+    public AddressVo() { }
 
-    public AddressVo(String roadAddress, String jibunAddress, String x, String y) {
-        super();
-        this.roadAddress = roadAddress;
-        this.jibunAddress = jibunAddress;
-        this.x = x;
-        this.y = y;
-    }
 
     public String getRoadAddress() {
         return roadAddress;
