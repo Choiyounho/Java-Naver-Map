@@ -1,6 +1,8 @@
 package console;
 
-import console.domain.NaverMapApi;
+import console.view.AddressView;
+import console.domain.*;
+
 import org.json.JSONArray;
 
 import java.io.BufferedReader;

@@ -1,13 +1,13 @@
-public class AddressVO {
+public class AddressVo {
     private String roadAddress;
     private String jibunAddress;
     private String x;
     private String y;
 
-    public AddressVO() {
+    public AddressVo() {
     }
 
-    public AddressVO(String roadAddress, String jibunAddress, String x, String y) {
+    public AddressVo(String roadAddress, String jibunAddress, String x, String y) {
         super();
         this.roadAddress = roadAddress;
         this.jibunAddress = jibunAddress;
@@ -49,7 +49,7 @@ public class AddressVO {
 
     @Override
     public String toString() {
-        return "AddressVO [roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", x=" + x + ", y=" + y
+        return "AddressVo [roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", x=" + x + ", y=" + y
                 + "]";
     }
 }
