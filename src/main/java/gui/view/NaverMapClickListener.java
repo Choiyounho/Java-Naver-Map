@@ -17,7 +17,7 @@ import java.net.HttpURLConnection;
 
 public class NaverMapClickListener implements ActionListener {
 
-    private naver.map.gui.view.Gui naverMapJFrame;
+    private gui.view.Gui naverMapJFrame;
 
     public NaverMapClickListener(naver.map.gui.view.Gui naverMapJFrame) {
         this.naverMapJFrame = naverMapJFrame;

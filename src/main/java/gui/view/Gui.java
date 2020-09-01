@@ -1,4 +1,4 @@
-package naver.map.gui.view;
+package gui.view;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
