@@ -1,3 +1,6 @@
+package console;
+
+import console.domain.NaverMapApi;
 import org.json.JSONArray;
 
 import java.io.BufferedReader;
@@ -6,9 +9,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 
-/**
- * 콘솔 출력
- */
+
 public class NaverMapApplication {
 
     public static void main(String[] args) {
