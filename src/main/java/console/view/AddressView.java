@@ -1,6 +1,5 @@
 package console.view;
 
-import gui.domain.AddressVo;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -20,19 +19,6 @@ public class AddressView {
             System.out.println("위도 : " + naverMapInfo.get("y"));
         }
     }
-
-    public static AddressVo printAddressVo(JSONArray jsonArray) {
-        AddressVo addressVo = new AddressVo();
-        for (int i = 0; i < jsonArray.length(); i++) {
-            JSONObject object = (JSONObject) jsonArray.get(i);
-            addressVo.setRoadAddress((String) object.get("roadAddress"));
-            addressVo.setJibunAddress((String) object.get("jibunAddress"));
-            addressVo.setX((String) object.get("x"));
-            addressVo.setY((String) object.get("y"));
-        }
-        return addressVo;
-    }
-
 
     public static String inputAddress(BufferedReader inputStreamReader) throws IOException {
         System.out.println(ADRRESS_INPUT);

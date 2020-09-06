@@ -16,8 +16,6 @@ import static utils.CommonsConstant.UTF_8;
 
 public class NaverMapApi {
 
-    public NaverMapApi(){}
-
     private static final String NAVER_MAP_API_URL = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=";
 
     public static JSONArray jsonParse(StringBuilder response) {
@@ -27,9 +25,9 @@ public class NaverMapApi {
     }
 
     public static StringBuilder getNaverMapResponse(HttpURLConnection httpConnection) throws IOException {
-        StringBuilder response = null;
+        StringBuilder response;
         int responseCode = httpConnection.getResponseCode();
-        BufferedReader bufferedReader = null;
+        BufferedReader bufferedReader;
         bufferedReader = getResponseData(httpConnection, responseCode);
         response = findErrorResponse(bufferedReader);
         bufferedReader.close();
@@ -38,7 +36,7 @@ public class NaverMapApi {
     }
 
     public static HttpURLConnection requestNaverMapApi(String apiUrl) throws IOException {
-        HttpURLConnection httpConnection = null;
+        HttpURLConnection httpConnection;
         URL url = new URL(apiUrl);
         httpConnection = (HttpURLConnection) url.openConnection();
         httpConnection.setRequestMethod(HTTP_METHOD_GET);
