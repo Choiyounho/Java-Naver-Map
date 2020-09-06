@@ -56,7 +56,7 @@ public class NaverMapDownloadApi {
         }
     }
 
-    public String initNaverMapDownloadApiUrl(AddressVo addressVo) throws UnsupportedEncodingException {
+    private String initNaverMapDownloadApiUrl(AddressVo addressVo) throws UnsupportedEncodingException {
         String pos = URLEncoder.encode(addressVo.getX() + " " + addressVo.getY(), UTF_8);
         StringBuilder imageDownloadApiUrl = new StringBuilder();
         imageDownloadApiUrl.append(NAVER_MAP_DOWNLOAD_API_URL)
@@ -72,11 +72,11 @@ public class NaverMapDownloadApi {
         return imageDownloadApiUrl.toString();
     }
 
-    public String createFileName() {
+    private String createFileName() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern(FORMAT_DATE_TIME));
     }
 
-    public static File createFile(String imageFileName) {
+    private static File createFile(String imageFileName) {
         return new File(imageFileName + IMAGE_TYPE);
     }
 

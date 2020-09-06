@@ -1,13 +1,14 @@
 package gui.domain;
 
 public class AddressVo {
+
     private String roadAddress;
     private String jibunAddress;
     private String x;
     private String y;
 
-    public AddressVo() { }
-
+    public AddressVo() {
+    }
 
     public String getRoadAddress() {
         return roadAddress;
@@ -41,9 +42,4 @@ public class AddressVo {
         this.y = y;
     }
 
-    @Override
-    public String toString() {
-        return "gui.domain.AddressVo [roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", x=" + x + ", y=" + y
-                + "]";
-    }
 }

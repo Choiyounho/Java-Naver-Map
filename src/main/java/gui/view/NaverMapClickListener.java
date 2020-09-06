@@ -35,7 +35,7 @@ public class NaverMapClickListener implements ActionListener {
 
             JSONArray jsonArray = NaverMapApi.jsonParse(response);
 
-            AddressVo addressVo = AddressView.printAddressVo(jsonArray);
+            AddressVo addressVo = Gui.printAddressVo(jsonArray);
 
             NaverMapDownloadApi naverMapDownloadApi = new NaverMapDownloadApi();
 
@@ -54,7 +54,7 @@ public class NaverMapClickListener implements ActionListener {
 
     }
 
-    public void printNaverMapJFrame(AddressVo addressVo, File file) {
+    private void printNaverMapJFrame(AddressVo addressVo, File file) {
         ImageIcon imageIcon = new ImageIcon(file.getName());
         naverMapJFrame.getImageLabel().setIcon(imageIcon);
         naverMapJFrame.getResAddress().setText(addressVo.getRoadAddress());

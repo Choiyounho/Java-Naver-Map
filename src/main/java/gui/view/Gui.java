@@ -1,5 +1,9 @@
 package gui.view;
 
+import gui.domain.AddressVo;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.GridLayout;
@@ -27,13 +31,6 @@ public class Gui {
     private static final int JFRAME_PRINT_ADDRESS_WIDTH = 4;
     private static final int JFRAME_PRINT_ADDRESS_HEIGHT = 1;
 
-    // TODO : 기존 JLabel 변수는 한 라인에 다 선언 했었음 Ex) resAddress, resX, resY ...
-    // TODO : 한결 개인적으로 가독성 떨어진다고 생각해서 개개별로 선언식으로 변경함.
-    // TODO : 컨벤션 보고 한 라인에 선언한다면 바꾸는 방법도 고려 해보기
-
-    // TODO : 변수 접두어 res가 어떤 의미인지 확인하고 축약하지 말고 명시적으로 변경하기
-
-    // TODO : 도로명이 영어로 뭔지 보고 상수명 변경하기
     private JTextField address;
     private JLabel resAddress;
     private JLabel resX;
@@ -108,6 +105,18 @@ public class Gui {
         panel.add(resX);
         panel.add(resY);
         return panel;
+    }
+
+    public static AddressVo printAddressVo(JSONArray jsonArray) {
+        AddressVo addressVo = new AddressVo();
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject object = (JSONObject) jsonArray.get(i);
+            addressVo.setRoadAddress((String) object.get("roadAddress"));
+            addressVo.setJibunAddress((String) object.get("jibunAddress"));
+            addressVo.setX((String) object.get("x"));
+            addressVo.setY((String) object.get("y"));
+        }
+        return addressVo;
     }
 
     private void initJLabel() {

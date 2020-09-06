@@ -2,7 +2,8 @@ package utils;
 
 public class CommonsConstant {
 
-    private CommonsConstant(){}
+    private CommonsConstant() {
+    }
 
     public static final String NAVER_MAP_API_KEY_ID = "X-NCP-APIGW-API-KEY-ID";
     public static final String NAVER_MAP_API_KEY_SECRET = "X-NCP-APIGW-API-KEY";
