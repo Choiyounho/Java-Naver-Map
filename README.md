@@ -4,7 +4,7 @@
 ---
 #### 개발환경
 - Java 1.8
-- Buil tool - Gradle
+- Build tool - Gradle
 
 ## 구현 내용
 #### 콘솔 출력(console)
